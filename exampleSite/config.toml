@@ -1,11 +1,12 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "examplesite.com"
 languageCode = "en-us"
-title = "Liva | Personal blog template"
+title = "A Way to Data | Yerzhan's Blog"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
-disqusShortname = ""
+disqusShortname = "awaytodata"
+canonifyURLs = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -82,13 +83,15 @@ logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Yerzhan"
 # Google Analitycs
-googleAnalyticsID = "Your ID"
+googleAnalyticsID = "UA-89970082-2"
+
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+#mobile = "+77719076605"
+#email = "yerzhan.karatay@gmail.com"
+#location = "Astana, Kazakhstan"
+
 # copyright
 copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
 
@@ -101,34 +104,44 @@ copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All 
   [params.search]
   enable = true
 
-############################ newsletter ########################
+############################ news letter ########################
 [params.newsletter]
 enable = true
-title = "Join Our Newsletter"
+title = "Join My Newsletter"
 content = "Subscribe to Receive Blog Updates by Email"
 
 ############################# social site ########################
 [[params.social]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://facebook.com/yerzhankaratay"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/yerzhankaratay"
 
 [[params.social]]
 title = "instagram"
 icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://instagram.com/yerzh_n"
 
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/yerzhankaratay"
 
 [[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://linkedin.com/in/yerzhankaratay"
+
+[[params.social]]
+title = "more links"
+icon = "ti-more-alt"
+link = "/about#more-links"
+
+########################## taxonomies ##############
+[taxonomies]
+  tag = "tags"
+  category = "categories"
