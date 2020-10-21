@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         {{ range .Params.Categories }}
-        <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"
+        <a style="text-transform: capitalize;" href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"
           class="text-primary">{{ . | title | humanize }}</a>
         {{ end }}
         <h2>{{ .Title | markdownify }}</h2>
@@ -22,6 +22,17 @@
         <div class="content mb-5">
           {{ .Content }}
         </div>
+
+
+
+          <div class="widget">
+          <h4 class="widget-title">Tags</h4>
+                <ul class="list-inline">
+            {{- range (.GetTerms "tags") }}
+                <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+           {{ end }}
+                </ul>
+           </div>
 
         <!-- comments -->
         {{ template "_internal/disqus.html" . }}

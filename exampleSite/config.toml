@@ -84,7 +84,7 @@ home = "Home"
 description = "This is meta description"
 author = "Themefisher"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalyticsID = "Your ID"
 # Contact Information
 mobile = "0124857985320"
 email = "demo@email.com"
@@ -101,18 +101,11 @@ copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All 
   [params.search]
   enable = true
 
-############################ news letter ########################
+############################ newsletter ########################
 [params.newsletter]
 enable = true
 title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
-
-
-# cookies
-[params.cookies]
-enable = true
-expire_days = 2
-
+content = "Subscribe to Receive Blog Updates by Email"
 
 ############################# social site ########################
 [[params.social]]

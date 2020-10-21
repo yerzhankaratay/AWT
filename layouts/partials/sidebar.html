@@ -19,15 +19,16 @@
     <ul class="list-unstyled">
       {{- range $name, $items := .Site.Taxonomies.categories }}
       <li><a
-          href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
+          href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}" style="text-transform: capitalize;">{{ $name | title | humanize }}</a>
       </li>
       {{- end }}
     </ul>
     {{- end }}
     {{- end }}
   </div>
+
   <!-- Tags -->
-  <div class="widget">
+<!--  <div class="widget">
     <h4 class="widget-title">Tag</h4>
     {{- if isset .Site.Taxonomies "tags" }}
     {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
@@ -39,7 +40,8 @@
     </ul>
     {{- end }}
     {{- end }}
-  </div>
+  </div> -->
+
   <!-- social -->
   <div class="widget">
     <h4 class="widget-title">Social</h4>
@@ -50,7 +52,7 @@
     </ul>
   </div>
   <!-- advertisement -->
-  <div class="widget">
+<!--  <div class="widget">
     <img src="{{`images/promotion.png` | absURL}}" alt="" class="img-fluid">
   </div>
-</div>
+</div> -->
