@@ -18,17 +18,17 @@
 <!-- other links -->
 <div class="widget">
   <h4 class="widget-title" id="more-links">Links</h4>
-     <ul class="navbar-nav mr-auto list-inline">
+     <ul class="navbar-nav mr-auto">
         {{ range .Site.Params.social }}
-        <li class="nav-item list-inline">
-          <a class="nav-link list-inline-item" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
         </li>
         {{ end }}
-        <li class="nav-link list-inline-item"><a href="https://t.me/yerzhankaratay"><img alt="goodreads" src="../../images/icons/telegram.svg" width="32" height="32"></a></li>
-        <li class="nav-link list-inline-item"><a href="https://goodreads.com/yerzhan"><img alt="goodreads" src="../../images/icons/goodreads.svg" width="32" height="32"></a></li>
-        <li class="nav-link list-inline-item"><a href="https://vk.com/yerzhan.karatay"><img alt="goodreads" src="../../images/icons/vk.svg" width="32" height="32"></a></li>
-        <li class="nav-link list-inline-item"><a href="https://medium.com/@yerzhan.karatay"><img alt="goodreads" src="../../images/icons/medium.svg" width="32" height="32"></a></li>
-        <li class="nav-link list-inline-item"><a href="https://taplink.com/yerzh_n"><img alt="taplink" src="../../images/icons/taplink.svg" width="32" height="32"></a></li>
+        <li class="nav-link"><a href="https://t.me/yerzhankaratay"  class="nav-link"><img alt="goodreads" src="../../images/icons/telegram.svg" width="32" height="32"><i class="{{ .icon }}"></i></a></li>
+        <li class="nav-link"><a href="https://goodreads.com/yerzhan" class="nav-link"><img alt="goodreads" src="../../images/icons/goodreads.svg" width="32" height="32"><i class="{{ .icon }}"></i></a></li>
+        <li class="nav-link"><a href="https://vk.com/yerzhan.karatay" class="nav-link"><img alt="goodreads" src="../../images/icons/vk.svg" width="32" height="32"><i class="{{ .icon }}"></i></a></li>
+        <li class="nav-link"><a href="https://medium.com/@yerzhan.karatay" class="nav-link"><img alt="goodreads" src="../../images/icons/medium.svg" width="32" height="32"><i class="{{ .icon }}"></i></a></li>
+        <li class="nav-link"><a href="https://taplink.com/yerzh_n" class="nav-link"><img alt="taplink" src="../../images/icons/taplink.svg" width="32" height="32"><i class="{{ .icon }}"></i></a></li>
       </ul>
       </div>
 <!--  <ul class="navbar-nav mr-auto list-inline">
