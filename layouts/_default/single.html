@@ -23,7 +23,9 @@
           {{ .Content }}
         </div>
 
-
+<div class="share-buttons-widget">
+{{ partial "share-buttons.html" . }}
+</div>
 
           <div class="widget">
           <h4 class="widget-title">Tags</h4>
@@ -34,9 +36,6 @@
                 </ul>
            </div>
 
-          <div class="widget">
-{{ partial "share-buttons.html" . }}
-</div>
         <!-- comments -->
         {{ template "_internal/disqus.html" . }}
       </div>

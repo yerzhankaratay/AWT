@@ -36,6 +36,40 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <h2 class="mb-4">Hi Write To Me</h2>
+        <form name="contact" class="contact-form width-normal" action="/thank-you/" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Name"></label>
+                <div class="col-md-4">
+                    <input id="contact-form-name" name="Name" type="text" placeholder="Name" class="form-control input-md" required="" autocomplete="off">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Email"></label>
+                <div class="col-md-4">
+                    <input id="contact-form-email" name="Email" type="email" placeholder="Email Address" class="form-control input-md" required="" autocomplete="off">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Subject"></label>
+                <div class="col-md-4">
+                    <input id="contact-form-subject" name="Subject" type="text" placeholder="Subject" class="form-control input-md" required="" autocomplete="off">
+                </div>
+            </div>
+            <!-- Textarea -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=""></label>
+                <textarea class="form-control" id="contact-form-message" name="Message" placeholder="What's up?" rows="8"></textarea>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <button type="submit" value="Submit" id="Form-submit">Submit</button>
+            </div>
+        </form>
+        <!--
         <form action="#" method="POST" class="row">
           <div class="col-lg-6">
             <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Your Name">
@@ -52,7 +86,7 @@
           <div class="col-12">
             <button type="submit" class="btn btn-primary">send message</button>
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
