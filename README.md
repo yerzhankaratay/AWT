@@ -4,3 +4,6 @@
 
 My [blog](https://awaytodata.netlify.com) is kept in this repository.
 [Liva Hugo Template(MIT License)](https://gethugothemes.com/products/liva-hugo/)
+
+Gallery
+https://github.com/liwenyip/hugo-easy-gallery
