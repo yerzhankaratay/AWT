@@ -25,7 +25,7 @@ tags:
 type: "featured"
 ---
 
-This was posted on Instagram, so please press the arrow buttons in the post or swipe to move around if you're on mobile.
+This was posted on [Instagram](https://www.instagram.com/p/CDwXWQppURE/), so please press the arrow buttons in the post or swipe to move around if you're on mobile.
 {{< load-photoswipe >}}
 {{< gallery >}}
   {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/01.jpg" >}}
