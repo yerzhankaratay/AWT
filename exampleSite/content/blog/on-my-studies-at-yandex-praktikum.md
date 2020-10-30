@@ -26,4 +26,4 @@ type: "featured"
 ---
 
 ##### This was posted on Instagram, so please press the arrow buttons in the post or swipe to move around if you're on mobile.
-{{< instagram CDwXWQppURE hidecaption >}}
+{{< instagram CDwXWQppURE >}}
