@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "examplesite.com"
 languageCode = "en-us"
-title = "A Way to Data | Yerzhan's Blog"
+title = "Data Bildung | Yerzhan's Blog"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
