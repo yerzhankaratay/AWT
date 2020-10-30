@@ -27,41 +27,14 @@ type: "featured"
 
 This was posted on Instagram, so please press the arrow buttons in the post or swipe to move around if you're on mobile.
 
-<div class="row no-gutters">
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/01.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/01.jpg" alt></a>
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/02.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/02.jpg" alt></a>
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/03.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/03.jpg" alt></a>
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/04.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/04.jpg" alt></a>
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/05.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/05.jpg" alt></a>
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/06.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/06.jpg" alt></a>  
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/07.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/07.jpg" alt></a>  
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/08.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/08.jpg" alt></a>  
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-  <a href="images/post/202009-on-my-studies-at-yandex-praktikum/09.jpg" class="venobox vbox-item" data-gall="gallery">
-  <img class="img-fluid w-100" src="images/post/202009-on-my-studies-at-yandex-praktikum/09.jpg" alt></a>
-  </div>
-</div>
+{{< gallery >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/01.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/02.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/03.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/04.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/05.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/06.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/07.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/08.jpg" >}}
+  {{< figure src="/images/post/202009-on-my-studies-at-yandex-praktikum/09.jpg" >}}
+{{< /gallery >}}
