@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <h2>{{ .Title | markdownify }}</h2>
-        <div class="content mb-4">
+        <div class="content">
           {{ .Content }}
         </div>
         <div class="row">
@@ -35,26 +35,26 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h2 class="mb-4">Hi Write To Me</h2>
+        <h2>Hi Write To Me</h2>
         <form name="contact" class="contact-form row" action="/thank-you/" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <!-- Name input -->
             <div class="col-lg-6 form-group">
                 <label class="control-label" for="Name"></label>
-                    <input id="contact-form-name" name="Name" type="text" placeholder="Name" width="100%" class="form-control input-md form-control mb-4" required="" autocomplete="on">
+                    <input id="contact-form-name" name="Name" type="text" placeholder="Name" width="100%" class="form-control input-md form-control" required="" autocomplete="on">
             </div>
             <!-- Email input-->
             <div class="col-lg-6 form-group">
                 <label class="control-label" for="Email"></label>
-                <input id="contact-form-email" name="Email" type="email" width="100%" placeholder="Email Address" class="form-control input-md form-control mb-4" required="" autocomplete="on">
+                <input id="contact-form-email" name="Email" type="email" width="100%" placeholder="Email Address" class="form-control input-md form-control" required="" autocomplete="on">
             </div>
             <!-- Subject -->
             <div class="col-12 form-group">
               <label class="control-label" for="Subject"></label>
-                  <input id="contact-form-subject form-control mb-4" name="Subject" type="text" placeholder="Subject" class="form-control input-md" required="" autocomplete="off">
+                  <input id="contact-form-subject form-control" name="Subject" type="text" placeholder="Subject" class="form-control input-md" required="" autocomplete="off">
                   <!-- Message -->
                 <label class="col-lg-6 control-label" for=""></label>
-                <textarea class="form-control form-control mb-4" id="contact-form-message" name="Message" placeholder="What's up?" rows="8"></textarea>
+                <textarea class="form-control form-control" id="contact-form-message" name="Message" placeholder="What's up?" rows="8"></textarea>
             </div>
             <!-- Button -->
             <div class="col-12 form-group">
