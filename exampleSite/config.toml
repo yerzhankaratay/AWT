@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "examplesite.com"
+baseURL = "databildung.com" #"examplesite.com"
 languageCode = "en-us"
 title = "Data Bildung | Yerzhan's Blog"
 theme = "liva-hugo"
