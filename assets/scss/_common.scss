@@ -58,12 +58,13 @@ a:hover {
 }
 
 .section {
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 150px;
 
   &-sm {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &-title {
