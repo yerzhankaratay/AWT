@@ -220,9 +220,13 @@ img[src$="centerme"] {
 }
 
 .goodreads-logo:hover {
-fill: #e7e2c5;
+  fill: #e7e2c5;
 }
 
 .taplink-logo:hover {
-fill: #14b1fe;
+  fill: #14b1fe;
+}
+
+.inline-sub {
+  display: inline-block;
 }
