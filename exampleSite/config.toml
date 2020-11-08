@@ -145,3 +145,12 @@ link = "/about#more-links"
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+########################## social share ##############
+#source: https://codingnconcepts.com/hugo/social-icons-hugo/
+[Params.social.share]
+facebook = true
+linkedin = true
+twitter = true
+whatsapp = false
+email = true
