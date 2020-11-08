@@ -148,7 +148,7 @@ link = "/about#more-links"
 
 ########################## social share ##############
 #source: https://codingnconcepts.com/hugo/social-icons-hugo/
-[Params.social.share]
+[[params.social.share]]
 facebook = true
 linkedin = true
 twitter = true
