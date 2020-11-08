@@ -22,7 +22,7 @@
         <div class="content mb-5">
           {{ .Content }}
         </div>
-
+{{ partial "share-buttons.html" . }}
           <div class="widget">
           <h4 class="widget-title">Tags</h4>
                 <ul class="list-inline">
@@ -31,7 +31,6 @@
            {{ end }}
                 </ul>
            </div>
-
         <!-- comments -->
         {{ template "_internal/disqus.html" . }}
       </div>
