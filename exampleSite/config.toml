@@ -6,7 +6,7 @@ theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
 disqusShortname = "awaytodata"
-canonifyURLs = false
+canonifyURLs = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
