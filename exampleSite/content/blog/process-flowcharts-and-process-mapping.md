@@ -21,6 +21,7 @@ tags:
 
 # post type
 type: "post"
+socialshare: true
 ---
 ... and it was a long time ago but here is what I managed to make on my own with what I learnt in the first course from [Jeremy Aschenbrenner](https://www.udemy.com/user/jeremy-aschenbrenner/), I sent these to him by email and got some feedback. I wanted to learn the common rules of designing flowcharts and learnt a lot more.
 

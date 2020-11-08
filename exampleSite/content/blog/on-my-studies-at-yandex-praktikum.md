@@ -23,6 +23,7 @@ tags:
 
 # post type
 type: "featured"
+socialshare: true
 ---
 
 This was posted on [Instagram](https://www.instagram.com/p/CDwXWQppURE/), so please press the arrow buttons in the post or swipe to move around if you're on mobile.

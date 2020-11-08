@@ -26,6 +26,7 @@ tags:
 
 # post type
 type: "post"
+socialshare: true
 ---
 What if...? Since Instagram and other social media are not accessible in China, its top athletes have to use local solutions. Lin Dan is one of the [China's top marketable athletes](https://www.scmp.com/sport/china/article/2047319/lin-dan-perhaps-chinas-most-marketable-athlete-so-will-his-many-sponsors) that has become a two-time Olympic, five-time World, as well as a six-time All England champion. Marketers could use his image cause badminton is the second most popular sport in the world, but it seems like it is not being used to its full potential, which is why I am curious.
 
