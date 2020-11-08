@@ -21,7 +21,6 @@ tags:
 
 # post type
 type: "post"
-socialshare: true
 ---
 
 Let’s say you need to display a number of different locations on a map. I would like to visualize where the Airbnb rentals under $30 in Berlin are located. Besides [listings data from InsideAirbnb](http://insideairbnb.com/get-the-data.html), I am going to need RStudio packages (data.table, tidyr, and R.utils), [Google Earth Pro](https://www.google.com/earth/versions/) (download and install it, if you don’t have it yet), and online [CSV to KML Converter](http://convertcsv.com/csv-to-kml.htm). If your data are ready, then you can just skip the first part.

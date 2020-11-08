@@ -22,7 +22,6 @@ tags:
 
 # post type
 type: "featured"
-socialshare: true
 ---
 Recently, I was invited to become an ambassador of [Yandex.Praktikum](https://praktikum.yandex.ru), I have joyfully accepted the invitation, and because I love writing I joined a blogging marathon among a subgroup of ambassadors, sadly, it didn’t get supported by many but I prepared this review. A part of it was written 2 years ago, my highlights from the book have been kept publicly and privately on [goodreads](https://www.goodreads.com/notes/37835937-confident-data-skills/16635729-yerzhan-karatay), so I decided to elaborate the review by adding them to the first version.
 

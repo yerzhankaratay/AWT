@@ -18,7 +18,6 @@ tags:
 
 # post type
 type: "post"
-socialshare: true
 ---
 I had a project where I had to import around 100 different files 30 times (from 30 folders), in order to do that, I used a function called **fread** from data.table package (a faster alternative to read.csv that can work with big files), **dirLister** (a free and simple tool), and **sheets.google.com** (any Excel-ish software will do).
 
