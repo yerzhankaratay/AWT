@@ -205,6 +205,15 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   background: $primary-color !important;
 }
 
+
+figure[src$='#center']
+{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
 img[src$='#center']
 {
     display: block;
