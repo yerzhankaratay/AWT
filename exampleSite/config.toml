@@ -82,7 +82,7 @@ canonifyURLs = true
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "One can find my research and learning updates"
+description = "One can find some of my research and learning updates in this blog"
 author = "Yerzhan"
 # Google Analitycs
 googleAnalyticsID = "UA-89970082-2"
