@@ -97,8 +97,8 @@ copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All 
 
   # Preloader
   [params.preloader]
-  enable = true
-  preloader = "images/preloader.gif" # use .png , .svg or .gif format
+  enable = false
+  preloader = "images/preloader.png" # use .png , .svg or .gif format
 
   # search
   [params.search]
