@@ -32,9 +32,7 @@
   <meta property="og:description" content="{{ .Description }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  {{ if .Params.thumbnail }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
-  {{ end }}
+ <!--<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}"> -->
   {{ range .Params.tags }}
   <meta property="og:tags" content="{{ . }}">
   {{ end }}
@@ -55,27 +53,4 @@
   <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
   {{ end }}
   <!-- End of Twitter -->
-<!-- Facebook SDK for Javascript -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '1025646597954334',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v9.0'
-      });
-
-      FB.AppEvents.logPageView();
-
-    };
-
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "https://connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <!--End of Facebook SDK for Javascript -->
 </head>

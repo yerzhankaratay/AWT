@@ -86,7 +86,7 @@ description = "One can find some of my research and learning updates in this blo
 author = "Yerzhan"
 # Google Analitycs
 googleAnalyticsID = "UA-89970082-2"
-thumbnail = "images/logo.png"
+#thumbnail = "images/logo.png"
 # Contact Information
 #mobile = "+77719076605"
 #email = "yerzhan.karatay@gmail.com"
