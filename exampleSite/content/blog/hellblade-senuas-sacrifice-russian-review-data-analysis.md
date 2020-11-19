@@ -1,6 +1,6 @@
 ---
 title: "Sentiment Analysis of Russian Reviews to Senua's Sacrifice in Python"
-date: 2020-06-22T10:07:47+06:00
+date: 2020-11-19T16:36:00+06:00
 draft: false
 
 # post thumb
