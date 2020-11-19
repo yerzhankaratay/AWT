@@ -34,7 +34,7 @@ Then I thought about Russian cause we didn't work with it during my studies at [
 
 {{< tweet 1254266079532154880 >}}
 
-Even though I broke the rule, I did automate multiple sites that had only one or two reviews for the sake of practice.
+Even though I broke the rule, I did automate multiple sites that only had a couple of reviews for the sake of practice.
 
 The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot where the main character with a mental illness is Senua, a young lady set on a course to save her true love, a son of a Celtic chieftain named Dillion, from Hel, the foreign Scandinavian mythology's underworld and bring him back to life (how many people would do that given the opportunity?), because of her mental illness, Senua is both guided and misguided by several voices throughout the whole journey. I also thought that its reception would possibly be ambiguous, as playing it was not a pleasant experience, rather a thrilling one and people may have mistaken it for a slasher (in the beginning I certainly did), but it's full of puzzles and is a full-fledged adventure, there are no tutorials, and a player isn't even allowed to jump.
 
