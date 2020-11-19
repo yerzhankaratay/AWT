@@ -42,6 +42,7 @@ The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot w
 I removed 4 meaningless comments from the dataset, they either contained a word, a number, or a symbol, and one had been written even before the game was premiered.
 Let's see what lies on the surface before moving to the sentiment analysis
 {{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly-small.png" link="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png" >}}
+
 It probably doesn't come as a surprise that most of the reviews were written within the month the product was released but I would expect the numbers to drop gradually and not significantly, I may need to collect reviews written to other games to see how it works.
 
 Then come the ratings.
