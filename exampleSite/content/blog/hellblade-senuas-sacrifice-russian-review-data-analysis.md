@@ -46,7 +46,7 @@ It probably doesn't come as a surprise that most of the reviews were written wit
 
 Then come the ratings.
 I rounded decimals with .5 to the closest higher whole number, and what's lower to the closest lower one, as a score 7.4 was a total or aggregated score the game got from a player based on multiple factors required to rate the game by some site.
-![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Rating-Distribution.png?style=centerme)
+{{< figure src="../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Rating-Distribution.png" >}}
 There are 50 reviews of Hellblade: Senua's Sacrifice with a 10 out of 10 rating, more than 20 with around 8 and 9. 96 people of 136 highly enjoyed the game. There are 26 people who rated it above 6 and 14 who certainly didn't like it.
 
 Before I lemmatized the numbers I had loaded the stop words for Russian from nltk and added others like 'very', 'own', 'which', 'can', 'whole', 'need', which I believe were missing in the list. I also added words like 'play' and 'game' cause they're abundant here.
