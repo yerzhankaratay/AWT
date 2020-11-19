@@ -5,8 +5,9 @@ draft: false
 
 # post thumb
 image: "../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/hellblade-rule-based-sentiment-analysis.jpg"
+
 # meta description
-description: "Video Game Review Sentiment Analysis in Python"
+description: "Hellblade: Senua's Sacrifice Video Game Russian Reviews Rule-Based Sentiment Analysis in Python with VADER, googletrans, nltk, and MyStem"
 
 # taxonomies
 categories:
