@@ -35,18 +35,18 @@ Then I thought about Russian cause we didn't work with it during my studies at [
 
 {{< tweet 1254266079532154880 >}}
 
-Even though I broke the rule, I did automate multiple sites that only had a couple of reviews for the sake of practice.
+Even though I broke the rule, I did automate multiple sites with only a couple of reviews for the sake of practice.
 
 The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot where the main character with a mental illness is Senua, a young lady set on a course to save her true love, a son of a Celtic chieftain named Dillion, from Hel, the foreign Scandinavian mythology's underworld and bring him back to life (how many people would do that given the opportunity?), because of her mental illness, Senua is both guided and misguided by several voices throughout the whole journey. I also thought that its reception would possibly be ambiguous, as playing it was not a pleasant experience, rather a thrilling one and people may have mistaken it for a slasher (in the beginning I certainly did), but it's full of puzzles and is a full-fledged adventure, there are no tutorials, and a player isn't even allowed to jump.
 
 I removed 4 meaningless comments from the dataset, they either contained a word, a number, or a symbol, and one had been written even before the game was premiered.
 Let's see what lies on the surface before moving to the sentiment analysis
-{{< figure src="../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png" >}}
+![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png?style=centerme)
 It probably doesn't come as a surprise that most of the reviews were written within the month the product was released but I would expect the numbers to drop gradually and not significantly, I may need to collect reviews written to other games to see how it works.
 
 Then come the ratings.
 I rounded decimals with .5 to the closest higher whole number, and what's lower to the closest lower one, as a score 7.4 was a total or aggregated score the game got from a player based on multiple factors required to rate the game by some site.
-{{< figure src="../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Rating-Distribution.png" >}}
+![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Rating-Distribution.png?style=centerme)
 There are 50 reviews of Hellblade: Senua's Sacrifice with a 10 out of 10 rating, more than 20 with around 8 and 9. 96 people of 136 highly enjoyed the game. There are 26 people who rated it above 6 and 14 who certainly didn't like it.
 
 Before I lemmatized the numbers I had loaded the stop words for Russian from nltk and added others like 'very', 'own', 'which', 'can', 'whole', 'need', which I believe were missing in the list. I also added words like 'play' and 'game' cause they're abundant here.
