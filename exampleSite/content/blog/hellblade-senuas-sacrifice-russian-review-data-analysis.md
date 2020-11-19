@@ -41,22 +41,24 @@ The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot w
 
 I removed 4 meaningless comments from the dataset, they either contained a word, a number, or a symbol, and one had been written even before the game was premiered.
 Let's see what lies on the surface before moving to the sentiment analysis
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png" >}}
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png" width="900px">}}
 It probably doesn't come as a surprise that most of the reviews were written within the month the product was released but I would expect the numbers to drop gradually and not significantly, I may need to collect reviews written to other games to see how it works.
 
 Then come the ratings.
 I rounded decimals with .5 to the closest higher whole number, and what's lower to the closest lower one, as a score 7.4 was a total or aggregated score the game got from a player based on multiple factors required to rate the game by some site.
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Rating-Distribution.png" >}}
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Rating-Distribution.png" width="900px">}}
 There are 50 reviews of Hellblade: Senua's Sacrifice with a 10 out of 10 rating, more than 20 with around 8 and 9. 96 people of 136 highly enjoyed the game. There are 26 people who rated it above 6 and 14 who certainly didn't like it.
 
 Before I lemmatized the numbers I had loaded the stop words for Russian from nltk and added others like 'very', 'own', 'which', 'can', 'whole', 'need', which I believe were missing in the list. I also added words like 'play' and 'game' cause they're abundant here.
 I found [a function](https://www.kaggle.com/alxmamaev/how-to-easy-preprocess-russian-text) to preprocess Russian texts on Kaggle, it served well to lemmatize and tokenize the reviews. First it converts the texts in lowercase letters, then lemmatizes them with MyStem() and if a word isn't in included in the stop words and is neither an empty space nor a punctuation symbol.
 
 I'll just show what I got here and explain the underlying reasons of my actions in a different post:
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/wordcloud_with_mystopwords.png" >}}
+
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/wordcloud_with_mystopwords.png" width="900px" >}}
+
 Here's a word cloud of the words that people used to describe the game, the most common words get a particular weight corresponding to number of mentions so they're highlighted in larger font sizes, but how precise is the word cloud generator and how many times are these words mentioned in there? I calculated the occurrences by using `Counter` from `collections`.
 It turns out, it isn't really precise, as you can see the words like Plot (сюжет), Voice (голос), Sound (звук) are the three top highlighted words in the word cloud, while according to the following chart the word Heroine (героиня) should meddle in between the Voice and Sound, it only took place in the right side of the word cloud and is even smaller than the words mentioned way less frequently.
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Most-Frequently-Mentioned-Words.png" >}}
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Most-Frequently-Mentioned-Words.png" width="900px" >}}
 I was looking for a nice way to visualize the list of the most common words (although a bar plot would do the job), I liked the idea of bubbles, so I came up with a solution: a scatterplot that hides behind the plot.
 
 I got confused, I was thinking that 'head' (голова) appears in the list because it has been lemmatized from main (главный) but it wasn't, I then remembered that Senua carries Dillion's head on her belt as a container of his spirit. Isn't it interesting that it has been mentioned 45 times, almost in one third of the reviews gathered? I find it an impressive artifact. It is also certain that people have been astonished by the sound engineers' efforts to evoke the right feelings in players.
