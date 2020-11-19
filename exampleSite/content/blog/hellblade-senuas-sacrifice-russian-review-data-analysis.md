@@ -88,7 +88,7 @@ for an amateur, for me she is sad
 
 The reviewer was rather meaning to say 'dull' but it works. One could say that the comment carries a negative sentiment. Now that VADER classified the reviews, I can visualize the appraisal.
 
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution-pie-pyplot.png" style="centerme" >}}
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution-pie-pyplot.png" style=centerme >}}
 
 20% of 136 reviews are negative, 14% neutral, and the other 66% (90 reviews) carry an overall positive sentiment. Could I generalize to say that every 5th player didn't like it or would it be an exaggeration? Sadly, I don't have enough data to conduct a t-test but I believe that it's high enough a number to take into account and possibly adjust the game to this audience.
 
