@@ -33,7 +33,7 @@ At first, I was going to build a machine learning model to predict the ratings o
 
 Then I thought about Russian cause we didn't work with it during my studies at [Praktikum](/on-my-studies-at-yandex-praktikum/) and analyzing game reviews sounded even more exciting to me although I understood that there is rather a few reviews written in it. I started with kanobu.ru where I got around 70 reviews with ratings, so I started gathering as many reviews as I could and by the end of the day I got 140 reviews collected from various sites, I had to collect some manually from [a place](https://otzovik.com/reviews/hellblade_senua_s_sacrifice-igra_dlya_pc/).
 
-{{< tweet 1254266079532154880 class="tweet-centered" >}}
+{{< tweet 1254266079532154880 class="shortcode-centered" >}}
 
 Even though I broke the rule, I did automate multiple sites with only a couple of reviews for the sake of practice.
 
