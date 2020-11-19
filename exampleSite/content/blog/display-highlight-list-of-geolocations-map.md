@@ -60,13 +60,13 @@ Here’s an example of what a file should be like, the columns’ order doesn’
 
 The next step is to convert the .csv file into a .kml (Keyhole Markup Language) file with [free CSV to KML converter](http://convertcsv.com/csv-to-kml.htm). After choosing .csv file, I take price as Name Field, that will allow me to see price on the map, the price column number is 5 (column E) in .csv, and what happens when I click on a data point? We’ll see its description, therefore the description field is going to be the name column of a listing in the data, it comes second (column B), so one will be able to see prices before the names.
 
-![image](../../images/post/201904-display-highlight-list-of-geolocations-map/02.png?style=centerme)
+![image](../../images/post/201904-display-highlight-list-of-geolocations-map/02.png#center)
 
 #### Highlighting locations from the dataset on the map
 Now the final step is to launch the newly generated and downloaded KML file on Google Earth.
-![Highlighting locations from the dataset on the map](../../images/post/201904-display-highlight-list-of-geolocations-map/03.jpg?style=centerme)
+![Highlighting locations from the dataset on the map](../../images/post/201904-display-highlight-list-of-geolocations-map/03.jpg#center)
 
-![image](../../images/post/201904-display-highlight-list-of-geolocations-map/04.jpg?style=centerme)
+![image](../../images/post/201904-display-highlight-list-of-geolocations-map/04.jpg#center)
 
 One can conclude that density of Airbnb listings under $30 in East Berlin is higher than in the city’s Western part, it should be related to the history of the city.
 

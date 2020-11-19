@@ -27,7 +27,7 @@ Recently, I was invited to become an ambassador of [Yandex.Praktikum](https://pr
 
 I learnt a lot from Kirill as I also took some of his courses previously ([R A-Z](https://www.udemy.com/certificate/UC-17YWZEQI/), [Python A-Z](https://www.udemy.com/certificate/UC-4OZZEA41/)), watched streams and even a DataScienceGO conference. So it was a pleasure to get to know him better in the introduction chapter where he shares his background story, it was really surprising that he grew up in South Africa, for example.
 
-![what it means to be a data scientist](../../images/post/202010-review-confident-data-skills/01.jpg?style=centerme)
+![what it means to be a data scientist](../../images/post/202010-review-confident-data-skills/01.jpg#center)
 
 [Confident Data Skills](https://amzn.to/2H7PHsY) is a great introduction guide to understand what it means to be a data analyst and data scientist, how to become one, what they do and what their actual task is, which is to ensure that stakeholders understand the outcome of analysis, the required following actions and their costs or as he put: **being a data scientist ultimately means being the storyteller of information**. As much as I like writing code, I enjoy writing in general, my code writing skills were poorer 2 years ago, so this quote alone brought me hope back in that time.
 
@@ -35,7 +35,7 @@ The author explains well that we need analytics everywhere with case studies wit
 
 > As a nota bene: the even better news is that data will not deny you your interests. If you’re only playing at being the connoisseur but still enjoy a trashy zombie movie once the curtains are drawn, your data will continue to keep that secret enthusiasm of yours fed.
 
-![image](https://64.media.tumblr.com/71675de47077f22aa17bb3c5d180619e/7b40f2b601173ae5-90/s540x810/19f9c07903de76a8c23b88a8db1b346319508908.gif?style=centerme)
+![image](https://64.media.tumblr.com/71675de47077f22aa17bb3c5d180619e/7b40f2b601173ae5-90/s540x810/19f9c07903de76a8c23b88a8db1b346319508908.gif#center)
 
 He also seeks to clarify general misconceptions one may have.
 
@@ -51,7 +51,7 @@ The book will guide you on how an analysis is performed (the whole process gener
 
 He has convinced me to appreciate the value of graphics as I had appreciated the value of numbers more than plots (which is probably a weird thing to claim considering that I’ve worked as a graphic designer, yet, numbers are important, there’d be no graphs, hah!), so it was in a way eye opening cause a great analyst should not underestimate the importance of presentation skills and it’s more than writing code, as one should aim to make plots as clear and intuitive as possible. It was one the plot twists of my life.
 
-![image](https://64.media.tumblr.com/c12ab94d14a04a10d0978cab27e34c71/7b40f2b601173ae5-7e/s540x810/575cfe9fa652995c9de1e958a8c9fedd5a5aa935.gif?style=centerme)
+![image](https://64.media.tumblr.com/c12ab94d14a04a10d0978cab27e34c71/7b40f2b601173ae5-7e/s540x810/575cfe9fa652995c9de1e958a8c9fedd5a5aa935.gif#center)
 
 > Carrying out BI might seem unsophisticated, … but dismiss it at your peril; I don’t know a single executive who would genuinely prefer to read a 50-page report over a visual representation of the problem and its solution. If visualized well, BI dashboards will engage and persuade your audience to  make the changes that you suggest.
 

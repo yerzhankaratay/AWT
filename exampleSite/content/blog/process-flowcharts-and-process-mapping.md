@@ -28,8 +28,8 @@ You can see one of the flowcharts above and it was one of the tasks to design Pa
 
 I was digitizing an old book at the time of taking the course, it hasn’t been digitized, and I did it for my private use with my phone, one doesn’t even need a scanner, so I decided to document the process. I used Office Lens to scan the pictures (with text recognition tools, namely OCR) and then corrected the mistakes. Higher level flowcharts keep breaking down in more and more details, so in Level 0 one sees a very general process.
 
-![image](../../images/post/202006-process-flowcharts-and-process-mapping/Digitizing-A-Book-with-a-Smartphone-App-00.png?style=centerme)
+![image](../../images/post/202006-process-flowcharts-and-process-mapping/Digitizing-A-Book-with-a-Smartphone-App-00.png#center)
 
-![image](../../images/post/202006-process-flowcharts-and-process-mapping/Digitizing-A-Book-with-a-Smartphone-App-01.png?style=centerme)
+![image](../../images/post/202006-process-flowcharts-and-process-mapping/Digitizing-A-Book-with-a-Smartphone-App-01.png#center)
 
-![image](../../images/post/202006-process-flowcharts-and-process-mapping/Digitizing-A-Book-with-a-Smartphone-App-02.png?style=centerme)
+![image](../../images/post/202006-process-flowcharts-and-process-mapping/Digitizing-A-Book-with-a-Smartphone-App-02.png#center)

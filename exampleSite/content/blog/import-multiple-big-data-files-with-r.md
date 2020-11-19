@@ -24,15 +24,15 @@ I had a project where I had to import around 100 different files 30 times (from 
 So, let’s assume we’ve got a folder with the following files:
 
 I suggest to [download and install dirLister](https://github.com/SanderSade/DirLister/releases), after launching the DirLister.exe file, navigate to the folder in Input tab.
-![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-02.png?style=centerme)
+![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-02.png#center)
 
 Now switch to the Output tab, and choose where you want to save the filenames file, I chose Plain text (.txt) as an Output format and the same folder, then pressed Set as default options and Start.
 
-![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-03.png?style=centerme)
+![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-03.png#center)
 
 The file with a list of folder file names will open (if you tick “Open outpute file/folder after list generation”), otherwise check the Output folder.
 
-![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-04.png?style=centerme)
+![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-04.png#center)
 
 You can now copy the generated list in a [Google Sheets](http://sheets.google.com) file, where you are going to need a function called CONCATENATE.
 ``` id,name,host_id,host_name,neighbourhood_group,neighbourhood,latitude,longitude,room_type,price,minimum_nights,number_of_reviews,last_review,reviews_per_month,calculated_host_listings_count,availability_365
@@ -40,7 +40,7 @@ You can now copy the generated list in a [Google Sheets](http://sheets.google.co
 Considering these are the column names in the .csv files, let’s say we only want to select columns id, host_id, price, and availability_365, so the respective column numbers will be: 1, 3, 9, 16.&nbsp;&nbsp;
 
 NOTE: I’d advise to only import the columns that you need for your analysis as there are limits to either R or RAM. The rule is simple, the less data you load, the more files you can import.
-![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-05.png?style=centerme)
+![image](../../images/post/201904-import-multiple-big-data-files-with-r/import-big-data-files-05.png#center)
 
 So I pasted the list in column **C**, filled the first 3 cells in column **A**, and then filled the first row; used **CONCATENATE** in column **F** to connect all the other columns in one cell, then stretched the cells to the end of column **C**
 
