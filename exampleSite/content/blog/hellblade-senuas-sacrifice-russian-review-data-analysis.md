@@ -26,6 +26,7 @@ tags:
 type: "featured"
 ---
 {{< load-photoswipe >}}
+
 A while ago I was sent an article with a [great list of projects you can start coding while at home](https://medium.com/better-programming/a-great-list-of-projects-you-can-start-coding-while-at-home-237a8a922543), there were 2 projects of interest, I wanted to learn how to build a web-scraper and I wanted to conduct a sentiment analysis.
 
 At first, I was going to build a machine learning model to predict the ratings of book reviews. While building a web-scraper with BeautifulSoup, I encountered difficulties embodied within multiple review aggregation sites that wouldn't allow me to collect data, they either were too popular, meaning, ready to counter my attempts to get data from there or built with Ajax (not supported by BeautifulSoup), so I avoided manual collection as it was my purpose to learn how to automate and build a web-scraper.
@@ -40,7 +41,7 @@ The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot w
 
 I removed 4 meaningless comments from the dataset, they either contained a word, a number, or a symbol, and one had been written even before the game was premiered.
 Let's see what lies on the surface before moving to the sentiment analysis
-![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png?style=centerme)
+{{< figure src="../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviewed-Monthly.png" >}}
 It probably doesn't come as a surprise that most of the reviews were written within the month the product was released but I would expect the numbers to drop gradually and not significantly, I may need to collect reviews written to other games to see how it works.
 
 Then come the ratings.
