@@ -37,7 +37,7 @@ Then I thought about Russian cause we didn't work with it during my studies at [
 
 Even though I broke the rule, I did automate multiple sites with only a couple of reviews for the sake of practice.
 
-The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot where the main character with a mental illness is Senua, a young lady set on a course to save her true love, a son of a Celtic chieftain named Dillion, from Hel, the foreign Scandinavian mythology's underworld and bring him back to life (how many people would do that given the opportunity?), because of her mental illness, Senua is both guided and misguided by several voices throughout the whole journey. I also thought that its reception would possibly be ambiguous, as playing it was not a pleasant experience, rather a thrilling one and people may have mistaken it for a slasher (in the beginning I certainly did), but it's full of puzzles and is a full-fledged adventure, there are no tutorials, and a player isn't even allowed to jump.
+The reason why I chose Hellblade: Senua's Sacrifice is that I enjoyed the plot where the main character with a mental illness is Senua, a young lady set on a course to save her true love, a son of a Celtic chieftain named Dillion, from Hel, the foreign Scandinavian mythology's underworld and bring him back to life (how many people would do that given the opportunity?), because of her mental illness, Senua is both guided and misguided by several voices throughout the whole journey. I also thought that its reception would possibly be ambiguous, as playing it was not a pleasant experience, rather a thrilling one and people may have mistaken it for a slasher (in the beginning I certainly did), there are no tutorials, and a player isn't even allowed to jump, but it's full of puzzles and is a full-fledged adventure.
 
 I removed 4 meaningless comments from the dataset, they either contained a word, a number, or a symbol, and one had been written even before the game was premiered.
 Let's see what lies on the surface before moving to the sentiment analysis
@@ -53,7 +53,7 @@ I rounded decimals with .5 to the closest higher whole number, and what's lower 
 There are 50 reviews of Hellblade: Senua's Sacrifice with a 10 out of 10 rating, more than 20 with around 8 and 9. 96 people of 136 highly enjoyed the game. There are 26 people who rated it above 6 and 14 who certainly didn't like it.
 
 Before I lemmatized the numbers I had loaded the stop words for Russian from nltk and added others like 'very', 'own', 'which', 'can', 'whole', 'need', which I believe were missing in the list. I also added words like 'play' and 'game' cause they're abundant here.
-I found [a function](https://www.kaggle.com/alxmamaev/how-to-easy-preprocess-russian-text) to preprocess Russian texts on Kaggle, it served well to lemmatize and tokenize the reviews. First it converts the texts in lowercase letters, then lemmatizes them with MyStem() and if a word isn't in included in the stop words and is neither an empty space nor a punctuation symbol.
+I found [a function](https://www.kaggle.com/alxmamaev/how-to-easy-preprocess-russian-text) to preprocess Russian texts on Kaggle, it served well to lemmatize and tokenize the reviews. First it converts the texts in lowercase letters, then lemmatizes them with MyStem and if a word isn't included in the stop words list and is neither an empty space nor a punctuation symbol.
 
 I'll just show what I got here and explain the underlying reasons of my actions in a different post:
 
