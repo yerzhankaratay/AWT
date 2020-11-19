@@ -54,11 +54,11 @@ I found [a function](https://www.kaggle.com/alxmamaev/how-to-easy-preprocess-rus
 
 I'll just show what I got here and explain the underlying reasons of my actions in a different post:
 
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/wordcloud_with_mystopwords-small.png" link=/images/post/202011-hellblade-senuas-sacrifice-review-analysis/wordcloud_with_mystopwords.png" >}}
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/wordcloud_with_mystopwords-small.png" link="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/wordcloud_with_mystopwords.png" >}}
 
 Here's a word cloud of the words that people used to describe the game, the most common words get a particular weight corresponding to number of mentions so they're highlighted in larger font sizes, but how precise is the word cloud generator and how many times are these words mentioned in there? I calculated the occurrences by using `Counter` from `collections`.
 It turns out, it isn't really precise, as you can see the words like Plot (сюжет), Voice (голос), Sound (звук) are the three top highlighted words in the word cloud, while according to the following chart the word Heroine (героиня) should meddle in between the Voice and Sound, it only took place in the right side of the word cloud and is even smaller than the words mentioned way less frequently.
-{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Most-Frequently-Mentioned-Words.png" >}}
+{{< figure src="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Most-Frequently-Mentioned-Words-small.png" link="/images/post/202011-hellblade-senuas-sacrifice-review-analysis/Most-Frequently-Mentioned-Words.png" >}}
 I was looking for a nice way to visualize the list of the most common words (although a bar plot would do the job), I liked the idea of bubbles, so I came up with a solution: a scatterplot that hides behind the plot.
 
 I got confused, I was thinking that 'head' (голова) appears in the list because it has been lemmatized from main (главный) but it wasn't, I then remembered that Senua carries Dillion's head on her belt as a container of his spirit. Isn't it interesting that it has been mentioned 45 times, almost in one third of the reviews gathered? I find it an impressive artifact. It is also certain that people have been astonished by the sound engineers' efforts to evoke the right feelings in players.
