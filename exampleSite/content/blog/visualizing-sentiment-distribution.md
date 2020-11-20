@@ -1,13 +1,13 @@
 ---
-title: "On Sentiment Distribution Plot"
-date: 2020-11-20T16:36:00+06:00
+title: "Attempts at Distribution Plot with pyplot and Plotly"
+date: 2020-11-21T16:36:00+06:00
 draft: false
 
 # post thumb
 image: "../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/hellblade-rule-based-sentiment-analysis.jpg"
 
 # meta description
-description: "A few attempts to get the result"
+description: "Attempts at Distribution Plot for the Video Game Reviews Sentiment Analysis with pyplot and Plotly"
 
 # taxonomies
 categories:
@@ -16,11 +16,23 @@ categories:
 tags:
   - "Python"
   - "Plotly"
+  - "pyplot"
+  - "Bar Chart"
+  - "Pie Chart"
 
 
 # post type
 type: "post"
 ---
+
+Several ideas crossed my mind while I was trying to visualize the sentiment distribution for [the sentiment analysis](/blog/hellblade-senuas-sacrifice-russian-review-data-analysis/). At first I made the bar chart, but it doesn't really reflect the data as a whole, I would rather use it in case of more than 4 or 5 segments.
+![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution.png#center)
+
+Then I thought that I could use a pie chart and I encountered a new problem where I couldn't configure the start angle as the largest slice of a pie should mostly cover the right part, but when it does, it displays it on the left. However, this is already a better solution than the bar chart.
+![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution-pie-pyplot.png#center)
+Whenever I tried to set the right angle, it would mess the order and display as the following plot.
+
+So I remembered Plotly... and it isn't perfect, as I couldn't find the way to set the right order to display slices. It should follow the clockwise order in which the slices go smaller in a perfect world, below is what we get in the real one.
 
 <html>
 <head><meta charset="utf-8" /></head>
