@@ -1,6 +1,6 @@
 ---
 title: "On Sentiment Distribution Plot"
-date: 2020-11-21T16:36:00+06:00
+date: 2020-11-20T16:36:00+06:00
 draft: false
 
 # post thumb
