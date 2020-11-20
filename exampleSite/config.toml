@@ -145,3 +145,7 @@ link = "/about#more-links"
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+######################### markup ###################
+[markup.goldmark.renderer]
+    unsafe = true # Allow HTML in md files
