@@ -25,14 +25,16 @@ tags:
 type: "post"
 ---
 
-Several ideas crossed my mind while I was trying to visualize the sentiment distribution for [the sentiment analysis](/blog/hellblade-senuas-sacrifice-russian-review-data-analysis/) obtained as the output of the model. At first I made the bar chart, but it doesn't really reflect the data as a whole, I would rather use it in case of more than 4 or 5 segments.
+Several ideas crossed my mind while I was trying to visualize the sentiment distribution for [the sentiment analysis](/blog/hellblade-senuas-sacrifice-russian-review-data-analysis/) obtained as the output of my model. At first I made the bar chart, but it doesn't really reflect the data as a whole, I would rather use it in case of at least 4 segments.
 ![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution.png#center)
 
 Then I thought that I could use a pie chart and I encountered a new problem where I couldn't configure the start angle as the largest slice of a pie should mostly cover the right part, but when it does, it displays it on the left. However, this is already a better solution than the bar chart.
 ![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution-pie-pyplot-updated.jpg#center)
-Whenever I tried to set the right angle, it was messing the order and display as the following plot.
+Whenever I tried to set the right angle, it was messing the order and showing information similarly to the following plot.
 
-So I remembered Plotly... and it isn't perfect, as I couldn't find the way to set the right order to display slices. It should follow the clockwise order in which the slices go smaller in a perfect world, below is what we get in the real one but it's interactive, and more informative even in a static state as it has a total, so I stopped here.
+So I remembered Plotly... and it isn't perfect, as I couldn't find the way to set the right order to display slices. It should follow the clockwise order in which the slices go smaller in a perfect world, below is what we get in the real one but it's interactive, and more informative even in a static state as there is a total number of reviews in the middle, so I stopped here.
+
+I may want to try to visualize it later on or make an attempt to fix Plotly pie chart.
 
 <html>
 <head><meta charset="utf-8" /></head>
@@ -42,5 +44,4 @@ So I remembered Plotly... and it isn't perfect, as I couldn't find the way to se
 </body>
 </html>
 
-I'll likely try to visualize it later on or make an attempt to fix Plotly's chart.
-Here's an interesting thing, I was surprised to see that the numbers in plotly's interactive chart were different to pyplot, so I decided to rerun my code and now the numbers correspond but they are different in two different posts. It must be related to the fact that Google Translate is evolving and the newly added changes have affected the translation, cause the reviews were machine translated and then sent to VADER.
+Here's an interesting thing, I was surprised to see that the numbers in Plotly's interactive chart were different to pyplot, so I decided to rerun my code and now the numbers correspond but they are different in two different posts (and the highlighted image of this post). It must be related to the fact that Google Translate is evolving and the newly added changes have affected the translation, cause the reviews were machine translated and then sent to VADER, so the results may actually get better if they don't get worse. Hehe.
