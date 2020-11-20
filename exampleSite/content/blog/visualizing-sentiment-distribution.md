@@ -4,7 +4,7 @@ date: 2020-11-21T16:36:00+06:00
 draft: false
 
 # post thumb
-image: "../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/hellblade-rule-based-sentiment-analysis.jpg"
+image: "../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Attempts-at-Distribution Plot-with-pyplot-and-Plotly.png"
 
 # meta description
 description: "Attempts at Distribution Plot for the Video Game Reviews Sentiment Analysis with pyplot and Plotly"
