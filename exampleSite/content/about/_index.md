@@ -15,7 +15,7 @@ type : "about"
 
 My name is Yerzhan and I come from Kazakhstan.
 
-I got introduced to data analysis when I studied at Vietnamese-German University and got fascinated by being able to delve in and study any topic profoundly. So I took multiple online courses on DA during my studies and after I graduated from VGU I started a data science training at Practicum by Yandex. Soon after graduation, I became its ambassador and one of the admins of the graduate community.
+I got introduced to data analysis when I studied at Vietnamese-German University and got fascinated by being able to delve in and study any topic profoundly. So I took multiple Udemy MOOCs on Data Analysis during my studies and after I graduated from VGU I started [a data science training at Practicum by Yandex](https://databildung.com/blog/on-my-studies-at-yandex-praktikum/). Soon after graduation, I became its ambassador and one of the admins of the graduate community.
 
 Being a fluent speaker of several languages I have an interest in Natural Language Processing (NLP). I listen to SuperDataScience podcasts, read their newsletters, take online courses, read books and Kaggle notebooks, work on my DS projects, and I blog here.
 
