@@ -32,7 +32,7 @@ Then I thought that I could use a pie chart and I encountered a new problem wher
 ![image](../../images/post/202011-hellblade-senuas-sacrifice-review-analysis/Senuas-Sacrifice-Reviews-Sentiment-Distribution-pie-pyplot-updated.jpg#center)
 Whenever I tried to set the right angle, it was messing the order and showing information similarly to the following plot.
 
-So I remembered Plotly... and it isn't perfect, as I couldn't find the way to set the right order to display slices. It should follow the clockwise order in which the slices go smaller in a perfect world, below is what we get in the real one but it's interactive, and more informative even in a static state as there is a total number of reviews in the middle, so I stopped here.
+So I remembered Plotly... and it isn't perfect, as I couldn't find the way to set the right order to display slices. It should follow the clockwise order in which the slices go smaller in a perfect world, below is what we get in the real one but it's interactive, and more informative because of it, even if it looks very similar in the static state, one can find the numbers behind it, so here's that.
 
 I may want to try to visualize it later on or make an attempt to fix Plotly pie chart.
 
