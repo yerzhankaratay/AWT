@@ -7,3 +7,5 @@ My [blog](https://databildung.com) is kept in this repository.
 
 Gallery
 https://github.com/liwenyip/hugo-easy-gallery
+pdf.js
+https://github.com/anvithks/hugo-embed-pdf-shortcode
