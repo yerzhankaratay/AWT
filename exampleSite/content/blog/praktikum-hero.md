@@ -39,11 +39,11 @@ We also discussed a few other options but they were not doable due to the lack o
 
 When my data part was done, I was thinking about how to contribute more, so once we received a project name suggestion from a QA to call it Tomcats vs Pussycats well, and Dogs (rough translation), I made a logo, then some illustrations and went to sleep with peace of mind at around the time other team members did in their timezones.
 ![image](https://raw.githubusercontent.com/praktikum-hackathon/hackathon/dev/Research/catfight/catfight1.png?raw=true#center)
-![image](https://raw.githubusercontent.com/praktikum-hackathon/hackathon/dev/Research/catfight/catfight2.png?raw=true#center)
+![image](https://raw.githubusercontent.com/praktikum-hackathon/hackathon/dev/Research/catfight/catfight5.png?raw=true#center)
 ![image](https://raw.githubusercontent.com/praktikum-hackathon/hackathon/dev/Research/catfight/catfight3.png?raw=true#center)
 ![image](https://raw.githubusercontent.com/praktikum-hackathon/hackathon/dev/Research/catfight/catfight4.png?raw=true#center)
-I also understood the value of communication, as you may see in the video, we only have bar charts but when we were discussing my part, we discussed as if it was supposed to be the pie chart, that's fine though, as one could change the thing quickly in an actual practice but that was too late and it had appeared like that before the judges, and so it was a lesson for me to check those things until the end in the future. :)
+I also understood the value of communication, as you may see in the video, there are bar charts but we discussed them as if they were supposed to be pie charts, that's fine though, as one could change the thing quickly in an actual practice but that was too late and it had appeared like that before the judges, and so it was a lesson for me to check those things until the end in the future. :)
 
 {{< youtube 8cd0sLY-xjw >}}
 
-{{< embed-pdf url="https://databildung.com/images/post/202012-praktikum-hero-first-hackathon/yerzhan-praktikum-hero-certificate.pdf" >}}
+{{< embed-pdf url="./images/post/202012-praktikum-hero-first-hackathon/yerzhan-praktikum-hero-certificate.pdf" >}}
