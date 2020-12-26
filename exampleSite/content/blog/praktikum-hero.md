@@ -11,12 +11,11 @@ description: "Attempts at Distribution Plot for the Video Game Reviews Sentiment
 
 # taxonomies
 categories:
-  - "Data Visualization"
   - "Data Science"
+  - "Data Visualization"
   - "Python"
 tags:
   - "Python"
-  - "Plotly"
   - "hackathon"
   - "Yandex.Praktikum"
   - "Practicum at Yandex"
@@ -47,4 +46,4 @@ I also understood the value of communication, as you may see in the video, we on
 
 {{< youtube 8cd0sLY-xjw >}}
 
-{{< embed-pdf url="..\..\images\post\202012-praktikum-hero-first-hackathon\yerzhan-praktikum-hero-certificate.pdf" >}}
+{{< embed-pdf url="./images/post/202012-praktikum-hero-first-hackathon/yerzhan-praktikum-hero-certificate.pdf" >}}
