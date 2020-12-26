@@ -21,7 +21,7 @@ tags:
   - "Instagram"
 
 # post type
-type: "featured"
+type: "post"
 ---
 
 According to [the data that I have collected](https://drive.google.com/open?id=1FiAZePuAncQGJMZ5Id42S6F1pp4qoR47) (April, 2019), Jonatan Christie (21) has the biggest number of followers on Instagram among badminton players, most likely because the last year, 2018, he appeared to be the first Indonesian sportsman to claim Asian Games men’s singles gold title [in the last 12 years](https://www.thejakartapost.com/news/2018/08/29/asian-games-underdog-jojo-makes-comeback-with-victory-in-badminton.html). Not to mention that badminton is Indonesia’s national sport.
