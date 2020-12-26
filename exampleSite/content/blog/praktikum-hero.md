@@ -47,4 +47,4 @@ I also understood the value of communication, as you may see in the video, we on
 
 {{< youtube 8cd0sLY-xjw >}}
 
-{{ < embed-pdf url="./static/images/post/202012-praktikum-hero-first-hackathon/yerzhan-praktikum-hero-certificate.pdf" > }}
+{{ < embed-pdf url="../../images/post/202012-praktikum-hero-first-hackathon/yerzhan-praktikum-hero-certificate.pdf" > }}
