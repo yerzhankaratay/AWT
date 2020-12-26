@@ -33,7 +33,7 @@ Before the task description was announced, we got an advice from the jury to spe
 1. To see if male cats are getting adopted less often than female cats cause they mark the territory (maybe?)
 2. Female cats get more donations for gifts like toys, while boys get more practical donations like medical insurance.
 
-We also discussed a few other options but they were not doable due to the lack of data as we found out.
+We also discussed a few other options but they were not doable due to the lack of data as we found out in the process.
 
 ![image](https://github.com/praktikum-hackathon/hackathon/blob/dev/Research/logo/logo-all2x.png?raw=true#center)
 
