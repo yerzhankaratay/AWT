@@ -27,9 +27,9 @@ type: "featured"
 ---
 {{< load-photoswipe >}}
 
-In the second half of November I participated in my first hackathon organized among Yandex.Praktikum's graduates, it was the graduate community's first one too, so I was happy to join cause I know the community well. We were 5 in a team which consisted of a backend, and a frontend developer, QA software tester, and two data scientists. I was one of the two latter ones (it's a data blog after all). All of us didn't know each other before we got teamed up.
+In the second half of November I participated in my first hackathon organized among Yandex.Praktikum's graduates, it was the graduate community's first one too, so I was happy to join cause I know the community well. We were 5 in a team which consisted of a backend, and a frontend developer, QA software tester, and two data scientists. I was one of the two latter ones (it's a data blog after all). All of us didn't know each other before we were teamed up.
 
-Our task was to build a prototype of a real-time analytics platform to test hypotheses and see the results. We had 24 hours. We got data from a [homeless pet care service](https://teddyfood.com/) where one can donate to various shelters based in multiple cities across Russia. So the datasets included transactions per pet with a description and each pet's profile information.
+Our task was to build a prototype of a functional real-time analytics platform to test hypotheses and see the results. We had 24 hours. We got data from a [homeless pet care service](https://teddyfood.com/) where one can donate to various shelters based in multiple cities across Russia. So the datasets included transactions per pet with a description and each pet's profile information.
 
 Before the task description was announced, we got a tip from a jury member to spend the time with fun. So when we started our heated discussions with an attempt to create a great hypothesis, that was the advice that we eventually followed, our hypotheses were:
 
@@ -38,7 +38,7 @@ Before the task description was announced, we got a tip from a jury member to sp
 
 We also generated a few other ideas while being excited in our brainstorm session but they were not doable due to the lack of data as it was discovered in the process.
 
-[!image](https://github.com/praktikum-hackathon/hackathon/blob/dev/Research/logo/logo-all2x.png?raw=true#center)
+![image](https://github.com/praktikum-hackathon/hackathon/blob/dev/Research/logo/logo-all2x.png?raw=true#center)
 
 When my data part was done, I was thinking about how to contribute more cause it felt like the role of data people is quite limited to the first stages of the project development at least during the hackathon, so once we received a project name suggestion from a QA who called it Tomcats vs Pussycats (well, and Dogs) (a rough translation), I made a logo, then some illustrations and went to sleep with peace of mind at around the time other team members did in their according time zones.
 
