@@ -21,6 +21,7 @@ tags:
   - "Reviews"
   - "Russian Language"
   - "Data Visualization"
+  - "Project"
 
 # post type
 type: "featured"

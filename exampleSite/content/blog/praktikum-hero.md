@@ -20,7 +20,7 @@ tags:
   - "Yandex.Praktikum"
   - "Practicum at Yandex"
   - "Yandex"
-  - "certificates"
+  - "Certificate"
 
 # post type
 type: "featured"
