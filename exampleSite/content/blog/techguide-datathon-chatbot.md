@@ -7,7 +7,7 @@ draft: false
 image: "../../images/post/202101-course-datathon-chatbot/techguide.png"
 
 # meta description
-description: ""
+description: "First chatbot developing experience gained in a course and lessons"
 
 # taxonomies
 categories:
@@ -21,8 +21,9 @@ tags:
 # post type
 type: "featured"
 ---
-![datathon.kz's landing page](/images/post/202101-course-datathon-chatbot/datathon-landing#center)
-I took a 3 week course called datathon.kz at [Chatbot University](https://chatbot.university/), it is a platform made by Singapore's [Terra AI](http://terra-ai.sg/about.html), and an opportunity provided by its partnership with [BCPD AIFC](https://www.facebook.com/aifcbureau/posts/1291434797898151). When the course started, we had all the learning materials and access to the [autocaffe](https://autocaffe.io) platform where the chatbots get rendered.
+A 3 week course called datathon.kz at [Chatbot University](https://chatbot.university/), it is a platform made by Singapore's [Terra AI](http://terra-ai.sg/about.html), and an opportunity provided by its partnership with [BCPD AIFC](https://www.facebook.com/aifcbureau/posts/1291434797898151). When the course started, we had all the learning materials and access to the [autocaffe](https://autocaffe.io) platform where the chatbots get rendered.
+
+![datathon.kz's landing page](/images/post/202101-course-datathon-chatbot/datathon-landing.png#center)
 
 In the first session we were invited to a Telegram group to create and join teams, then to study together. I was in doubt whether I'll be joined by a person who invited me to take it just as the person, so I was reluctant to join forces with anyone else. That person didn't participate and I remained the only one man army but it was fine as it turned out I had my own (and quite unpopular) agenda.
 
@@ -46,10 +47,10 @@ I gathered materials to split them in topics, re-designed the whole bot to show 
 
 Feel free to try this final version out at https://app.smojo.org/kzbot021/bot.😃
 
-I don't know if I am going devote my time to developing chatbots, however the fact that I started seeing it differently was the most valuable lesson to me and I liked the course.
+I don't know if I am going devote my time to developing chatbots, however the fact that I started seeing it differently was the most valuable lesson to me and I'd say that I enjoyed the time.
 
-During the course some people asked whether we could implement the chatbots within Telegram or WhatsApp, or if we could connect it to a database for it to give the appropriate answers but I suppose it couldn't really be covered within the span of 3 weeks when were all new to making them. If truth be told, I don't know why they named it datathon cause I expected it to be very different like others but a journey of a thousand miles begins with a single step.
+During the course some people asked whether we could implement the chatbots within Telegram or Facebook, or if we could connect it to a database for it to give the appropriate answers but I suppose it couldn't really be covered within the span of 3 weeks when we were all new to making them. If truth be told, I don't know why they named it datathon cause I expected it to be very different like others but a journey of a thousand miles begins with a single step.
 
-We received certificates the 30th of December, 2020, hence I publish it today.
+We received [.pdf](../../images/post/202101-course-datathon-chatbot/AI4IMPACT-CHATBOT-DATATHON-KAZAKHSTAN-2020-CERTIFICATE OF-COMPLETION-YERZHAN-KARATAY.pdf) certificates the 30th of December, 2020, hence I publish it today.
 
 {{< embed-pdf url="/images/post/202101-course-datathon-chatbot/AI4IMPACT-CHATBOT-DATATHON-KAZAKHSTAN-2020-CERTIFICATE OF-COMPLETION-YERZHAN-KARATAY.pdf" >}}
