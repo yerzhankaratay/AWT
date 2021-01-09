@@ -47,10 +47,10 @@ I gathered materials to split them in topics, re-designed the whole bot to show 
 
 Feel free to try this final version out at https://app.smojo.org/kzbot021/bot.😃
 
-I don't know if I am going devote my time to developing chatbots, however the fact that I started seeing it differently was the most valuable lesson to me and I'd say that I enjoyed the time.
+I don't know if I am going devote my time to developing chatbots, however the fact that I started seeing it differently was the most valuable lesson to me and I'd say that I enjoyed the time, also got a feeling of what we were said (not the exact wording): "You'll be surprised to see that there's a simple logic even behind some bots that seem very smart".
 
-During the course some people asked whether we could implement the chatbots within Telegram or Facebook, or if we could connect it to a database for it to give the appropriate answers but I suppose it couldn't really be covered within the span of 3 weeks when we were all new to making them. If truth be told, I don't know why they named it datathon cause I expected it to be very different like others but a journey of a thousand miles begins with a single step.
+During the course some people asked whether we could implement the chatbots within Telegram or Facebook, or if we could connect it to a database for it to give the appropriate answers but I suppose it couldn't really be covered within the span of 3 weeks when we were all new to making them. If truth be told, I don't really understand why they named it **data**thon cause I expected it to be very different like others (judging from their questions) but a journey of a thousand miles begins with a single step.
 
-We received [.pdf](../../images/post/202101-course-datathon-chatbot/AI4IMPACT-CHATBOT-DATATHON-KAZAKHSTAN-2020-CERTIFICATE OF-COMPLETION-YERZHAN-KARATAY.pdf) certificates the 30th of December, 2020, hence I publish it today.
+We received [.pdf](../../images/post/202101-course-datathon-chatbot/AI4IMPACT-CHATBOT-DATATHON-KAZAKHSTAN-2020-CERTIFICATE-OF-COMPLETION-YERZHAN-KARATAY.pdf) certificates the 30th of December, 2020, hence I publish it today. Thanks!
 
-{{< embed-pdf url="/images/post/202101-course-datathon-chatbot/AI4IMPACT-CHATBOT-DATATHON-KAZAKHSTAN-2020-CERTIFICATE OF-COMPLETION-YERZHAN-KARATAY.pdf" >}}
+{{< embed-pdf url="/images/post/202101-course-datathon-chatbot/AI4IMPACT-CHATBOT-DATATHON-KAZAKHSTAN-2020-CERTIFICATE-OF-COMPLETION-YERZHAN-KARATAY.pdf" >}}
