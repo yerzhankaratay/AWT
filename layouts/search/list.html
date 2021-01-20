@@ -1,33 +1,3 @@
-<!-- {{ define "main" }}
-
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10"> -->
-<!--        <template id="search-result" hidden>
-    <article class="content post">
-        <h2 class="post-title"><a class="summary-title-link"></a></h2>
-        <summary class="summary"></summary>
-        <div class="read-more-container">
-            <a class="read-more-link">{{ i18n "readMore" }} »</a>
-        </div>
-    </article>-->
-<!--         <div id="search-results"></div>
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="py-4 border-bottom" id="summary-${key}">
-            <h4><a href="${link}">${title}</a></h4>
-            <p>${snippet}</p>
-            ${ isset tags }<p>Tags: ${tags}</p>${ end }
-            ${ isset categories }<p>Categories: ${categories}</p>${ end }
-          </div>
-        </script>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{ end }}
--->
 {{ define "main" }}
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
@@ -43,15 +13,3 @@
     </div>
   </div>
 </section>
-<!-- this template is sucked in by search.js and appended to the search-results div above. So editing here will adjust style -->
-<script id="search-result-template" type="text/x-js-template">
-    <div id="summary-${key}">
-      <h4><a href="${link}">${title}</a></h4>
-      <p>${snippet}</p>
-      ${ isset tags }<p>Tags: ${tags}</p>${ end }
-      ${ isset categories }<p>Categories: ${categories}</p>${ end }
-    </div>
-</script>
-
-
-{{ end }}
