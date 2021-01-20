@@ -25,7 +25,7 @@ A 3 week course called datathon.kz at [Chatbot University](https://chatbot.unive
 
 ![datathon.kz's landing page](/images/post/202101-course-datathon-chatbot/datathon-landing.png#center)
 
-In the first session we were invited to a Telegram group to create and join teams, then to study together. I was in doubt whether I'll be joined by a person who invited me to take it just as the person, so I was reluctant to join forces with anyone else. That person didn't participate and I remained the only one man army but it was fine as it turned out I had my own (and quite unpopular) agenda.
+In the first session we were invited to a Telegram group to create and join teams, then to study together. I was in doubt whether I'll be joined by a person who invited me to take it just as the person, so I was reluctant to join forces with anyone else. That person didn't participate and I remained a one man army but it was fine as it turned out I had my own (and quite unpopular) agenda.
 
 The first day an idea popped up in my mind which was related to an [old blog post](https://yerkar.com/post/190840063886/видеоигры-экономия-энергопотребления) that in its turn was based on a study called [Greening the Beast](https://sites.google.com/site/greeningthebeast/market-survey), so I made my first version of Tech Guide, a chatbot that provides computer energy efficiency tips. We then submitted our chatbots for the next live streaming session and watched their evaluation.
 
