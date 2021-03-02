@@ -36,7 +36,7 @@ order_payment = orders.merge(payments, how='inner', on='order_id')
 
 It was late night last Thursday, I gave it a try before going to sleep. When I was solving it, the words "in the first year" made me jump over to the next question cause it was time to sleep. I decided to see what I would get in the second question, solved it in a different way (from what one will see below, also I first used a different cohort column) and tagged Renat in a tweet. He gave me some feedback so I felt encouraged to get back to the task. In one of the following nights I wrote a few ideas of how to approach the first question just before falling asleep (see the time in the screenshot).
 
-[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/night-ideas.jpg)
+[image](/..static/images/post/202103-cohort-analysis-brazilian-ecommerce/night-ideas.jpg)
 
 The column we use to define cohorts:
 
@@ -62,7 +62,7 @@ day_diff['day_diff'] = ((day_diff['last_order'] - day_diff['first_order']).astyp
 day_diff.head(3)
 ```
 
-[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/day-difference-first-last-order-table.png)
+[image](/..static/images/post/202103-cohort-analysis-brazilian-ecommerce/day-difference-first-last-order-table.png)
 
 Okay, the gap has been calculated.
 
@@ -161,7 +161,7 @@ df = df.set_index('cohort')
 df
 ```
 
-[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/df-ecommerce.png)
+[image](/..static/images/post/202103-cohort-analysis-brazilian-ecommerce/df-ecommerce.png)
 
 ```
 paid_orders / all_orders
@@ -185,7 +185,7 @@ plt.ylabel('Total Payments', fontsize=13)
 plt.show()
 ```
 
-[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/total-payments-by-cohort.png)
+[image](/..static/images/post/202103-cohort-analysis-brazilian-ecommerce/total-payments-by-cohort.png)
 
 It's clear that there has been growth with a peak in a cohort of November 2017, however it's worth a remark that data are missing for the following months 2016-9, 2016-12, and 2018-9.
 
@@ -198,7 +198,7 @@ selected_cohorts = df.loc[['2018-3', '2018-4']]
 selected_cohorts
 ```
 
-[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/selected_cohorts.png)
+[image](/..static/images/post/202103-cohort-analysis-brazilian-ecommerce/selected_cohorts.png)
 
 ```
 selected_cohorts.iloc[1] - selected_cohorts.iloc[0]
