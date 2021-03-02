@@ -38,7 +38,7 @@ order_payment = orders.merge(payments, how='inner', on='order_id')
 1. How many orders on average, and how much do all cohorts make in the first year?
 2. Compare any of the two cohorts by revenue and number of orders
 
-It was late night last Thursday, I gave it a try before going to sleep. When I was solving it, the words "in the first year" made me jump over to the next question cause it was time to sleep. I decided to see what I would get in the second question, solved it in a different way (from what one will see below, also I first used a different cohort column) and tagged Renat in a tweet. He gave me some feedback so I felt encouraged to get back to the task. In one of the following nights I wrote a few ideas of how to approach the first question just before falling asleep (see the time in the screenshot).
+It was a late night last Thursday, I gave it a try before going to sleep. When I was solving it, the words "in the first year" made me jump over to the next question cause it was time to sleep. I decided to see what I would get in the second question, solved it in a different way (from what one will see below, also I first used a different cohort column) and tagged Renat in a tweet. He gave me some feedback so I felt encouraged to get back to the task. In one of the following nights I wrote a few ideas of how to approach the first question just before falling asleep (see the time in the screenshot).
 
 ![night ideas](../../images/post/202103-cohort-analysis-brazilian-ecommerce/night-ideas.jpg#center)
 
