@@ -7,7 +7,7 @@ draft: false
 image: "..static/images/post/202103-cohort-analysis-brazilian-ecommerce/brazilian-ecommerce-cohort-analysis.png"
 
 # meta description
-description: "Solving a challenge of Renat Alimbekov"
+description: "Solution Cohort Analysis of Brazilian Ecommerce with pandas in Python"
 
 # taxonomies
 categories:
@@ -42,17 +42,17 @@ The column we use to define cohorts:
 
 So I wanted to find the gap between the first and last order, then select the orders made within 365 days after the first order was made. I saved the first and last orders:
 
-``order_payment[cohort_column] = pd.to_datetime(order_payment[cohort_column])
-first_orders = order_payment.pivot_table(index='customer_id', values=cohort_column, aggfunc={cohort_column:'first'}).reset_index()
-last_orders = order_payment.pivot_table(index='customer_id', values=cohort_column, aggfunc={cohort_column:'last'}).reset_index()
-first_orders.columns = ['customer_id', 'first_order']
-last_orders.columns = ['customer_id', 'last_order']``
+``order_payment[cohort_column] = pd.to_datetime(order_payment[cohort_column])``
+``first_orders = order_payment.pivot_table(index='customer_id', values=cohort_column, aggfunc={cohort_column:'first'}).reset_index()``
+``last_orders = order_payment.pivot_table(index='customer_id', values=cohort_column, aggfunc={cohort_column:'last'}).reset_index()``
+``first_orders.columns = ['customer_id', 'first_order']``
+``last_orders.columns = ['customer_id', 'last_order']``
 
 Let's now calculate the difference between the first order and the last order.
 
-``day_diff = first_orders.merge(last_orders.set_index('customer_id'), on='customer_id')
-day_diff['day_diff'] = ((day_diff['last_order'] - day_diff['first_order']).astype("timedelta64[D]")).astype('int')
-day_diff.head(3)``
+``day_diff = first_orders.merge(last_orders.set_index('customer_id'), on='customer_id')``
+``day_diff['day_diff'] = ((day_diff['last_order'] - day_diff['first_order']).astype("timedelta64[D]")).astype('int')``
+``day_diff.head(3)``
 
 [image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\day-difference-first-last-order-table.png)
 
@@ -78,13 +78,14 @@ Since the purchase time is never different that makes it simpler and there's no 
 
 I'm creating a pivot table to gather information by customer and order_status with the columns that I need for analysis and order_status, will explain the reason why I need 'order_status' column in a step.
 
-``orders = order_payment.pivot_table(index=['customer_id', 'order_status'], values=[cohort_column, 'payment_value', 'order_id'], aggfunc={cohort_column:'min', 'payment_value': 'sum', 'order_id': 'count'}).reset_index()`
-```orders.columns = ['customer_id', 'order_status', 'order_count', 'order_date', 'payment_value']
+``orders = order_payment.pivot_table(index=['customer_id', 'order_status'], values=[cohort_column, 'payment_value', 'order_id'], aggfunc={cohort_column:'min', 'payment_value': 'sum', 'order_id': 'count'}).reset_index()
+orders.columns = ['customer_id', 'order_status', 'order_count', 'order_date', 'payment_value']
 orders['order_year'] = orders['order_date'].dt.year
 orders['order_month'] = orders['order_date'].dt.month
-```
+``
 
 ``orders['order_status'].unique().tolist()``
+
 ``['delivered',
  'unavailable',
  'processing',
@@ -98,14 +99,14 @@ orders['order_month'] = orders['order_date'].dt.month
 
 Let's choose all order but the ones with status unavailable and canceled. The shop has to return the payment for these orders back to customers, so this shouldn't count.
 
-``paid_orders = len(orders)
-paid_orders``
+``paid_orders = len(orders)``
+``paid_orders``
 ``98206``
 
 There are 98206 paid orders where the payment hasn't been refunded, not yet at least. Now we can make a new pivot
 
-``df = orders.pivot_table(index = ['order_year', 'order_month'], values=['customer_id','payment_value', 'order_count'], aggfunc={'customer_id': 'count', 'order_count':'sum', 'payment_value':'sum'}).reset_index()`
-```df.columns = ['order_year', 'order_month', 'customer_count', 'order_count', 'payment_value']``
+``df = orders.pivot_table(index = ['order_year', 'order_month'], values=['customer_id','payment_value', 'order_count'], aggfunc={'customer_id': 'count', 'order_count':'sum', 'payment_value':'sum'}).reset_index()``
+``df.columns = ['order_year', 'order_month', 'customer_count', 'order_count', 'payment_value']``
 
 Now I'm creating cohorts via year and date.
 
@@ -113,12 +114,11 @@ Now I'm creating cohorts via year and date.
 
 Calculating the average amount of orders per customer and average payment amount per order
 
-``df['mean_order_per_customer'] = round(df['order_count'] / df['customer_count'], 3)
-df['mean_payment_per_order'] = round(df['payment_value'] / df['order_count'], 3)
-``
+``df['mean_order_per_customer'] = round(df['order_count'] / df['customer_count'], 3)``
+``df['mean_payment_per_order'] = round(df['payment_value'] / df['order_count'], 3)``
 
-``df = df.set_index('cohort')
-df``
+``df = df.set_index('cohort')``
+``df``
 
 [image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\df-ecommerce.png)
 
@@ -128,13 +128,13 @@ df``
 
 ``import matplotlib.pyplot as plt``
 
-``plt.figure(figsize=(12,7))
-plt.plot(df['payment_value'])
-plt.xticks(rotation='45')
-plt.title('Total Payments by Cohort', fontsize=14)
-plt.xlabel('Cohort', fontsize=13)
-plt.ylabel('Total Payments', fontsize=13)
-plt.show()``
+``plt.figure(figsize=(12,7))``
+``plt.plot(df['payment_value'])``
+``plt.xticks(rotation='45')``
+``plt.title('Total Payments by Cohort', fontsize=14)``
+``plt.xlabel('Cohort', fontsize=13)``
+``plt.ylabel('Total Payments', fontsize=13)``
+``plt.show()``
 
 [image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\total-payments-by-cohort.png)
 
@@ -144,20 +144,20 @@ It's clear that there has been growth with a peak in a cohort of November 2017, 
 
 It's clear that there has been growth with a peak in a cohort of November 2017, however it's worth noticing that the data is missing in 2016-9, 2016-12, and 2018-9
 
-``selected_cohorts = df.loc[['2018-3', '2018-4']]
-selected_cohorts``
+``selected_cohorts = df.loc[['2018-3', '2018-4']]``
+``selected_cohorts``
 
 [image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\selected_cohorts.png)
 
 ``selected_cohorts.iloc[1] - selected_cohorts.iloc[0]``
-``order_year                    0.000
-order_month                   1.000
-customer_count             -249.000
-order_count                -279.000
-payment_value              3567.170
-mean_order_per_customer      -0.003
-mean_payment_per_order        6.486
-dtype: float64``
+``order_year                    0.000``
+``order_month                   1.000``
+``customer_count             -249.000``
+``order_count                -279.000``
+``payment_value              3567.170``
+``mean_order_per_customer      -0.003``
+``mean_payment_per_order        6.486``
+``dtype: float64``
 
 The two cohorts are of interest to me because of comparable payment values while the mean order per customer is smaller by 0.003 in the second (2018-4), on average these customers paid more by around 6.5 currency units. Perhaps it's worth studying the profile of those particular customers in detail for advertisement. :)
 
