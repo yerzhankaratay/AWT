@@ -4,7 +4,7 @@ date: 2021-03-02T22:00:00+06:00
 draft: false
 
 # post thumb
-image: "..static/images/post/202103-cohort-analysis-brazilian-ecommerce/brazilian-ecommerce-cohort-analysis.png"
+image: "../images/post/202103-cohort-analysis-brazilian-ecommerce/brazilian-ecommerce-cohort-analysis.png"
 
 # meta description
 description: "Cohort Analysis of Brazilian Ecommerce with pandas in Python"
@@ -24,7 +24,7 @@ tags:
 type: "featured"
 ---
 
-I was only acquainted with cohort analysis but thanks to Renat Alimbekov. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [standalone blog]('https://alimbekov.com'), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started learning. You can find his solution [here](https://alimbekov.com/cohort-analysis-python/)
+I was only acquainted with cohort analysis but thanks to Renat Alimbekov. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [blog]('https://alimbekov.com'), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started learning. You can find his solution [here](https://alimbekov.com/cohort-analysis-python/)
 
 We're given a dataset of Brazilian Ecommerce, the two tables to merge (olist_orders_dataset.csv and olist_order_payments_dataset.csv), and two questions:
 ```
@@ -36,12 +36,12 @@ order_payment = orders.merge(payments, how='inner', on='order_id')
 
 It was late night last Thursday, I gave it a try before going to sleep. When I was solving it, the words "in the first year" made me jump over to the next question cause it was time to sleep. I decided to see what I would get in the second question, solved it in a different way (from what one will see below, also I first used a different cohort column) and tagged Renat in a tweet. He gave me some feedback so I felt encouraged to get back to the task. In one of the following nights I wrote a few ideas of how to approach the first question just before falling asleep (see the time in the screenshot).
 
-[image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\night-ideas.jpg)
+[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/night-ideas.jpg)
 
 The column we use to define cohorts:
 
 ```
-cohort_column = 'order_purchase_timestam'
+cohort_column = 'order_purchase_timestamp'
 ```
 
 So I wanted to find the gap between the first and last order, then select the orders made within 365 days after the first order was made. I saved the first and last orders:
@@ -56,11 +56,13 @@ last_orders.columns = ['customer_id', 'last_order']
 
 Let's now calculate the difference between the first order and the last order.
 
-``day_diff = first_orders.merge(last_orders.set_index('customer_id'), on='customer_id')
+```
+day_diff = first_orders.merge(last_orders.set_index('customer_id'), on='customer_id')
 day_diff['day_diff'] = ((day_diff['last_order'] - day_diff['first_order']).astype("timedelta64[D]")).astype('int')
-day_diff.head(3)``
+day_diff.head(3)
+```
 
-[image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\day-difference-first-last-order-table.png)
+[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/day-difference-first-last-order-table.png)
 
 Okay, the gap has been calculated.
 
@@ -95,7 +97,8 @@ len(orders)
 
 I'm creating a pivot table to gather information by customer and order_status with the columns that I need for analysis and order_status, will explain the reason why I need 'order_status' column in a step.
 
-```orders = order_payment.pivot_table(index=['customer_id', 'order_status'], values=[cohort_column, 'payment_value', 'order_id'], aggfunc={cohort_column:'min', 'payment_value': 'sum', 'order_id': 'count'}).reset_index()
+```
+orders = order_payment.pivot_table(index=['customer_id', 'order_status'], values=[cohort_column, 'payment_value', 'order_id'], aggfunc={cohort_column:'min', 'payment_value': 'sum', 'order_id': 'count'}).reset_index()
 ```
 ```
 orders.columns = ['customer_id', 'order_status', 'order_count', 'order_date', 'payment_value']
@@ -158,7 +161,7 @@ df = df.set_index('cohort')
 df
 ```
 
-[image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\df-ecommerce.png)
+[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/df-ecommerce.png)
 
 ```
 paid_orders / all_orders
@@ -182,7 +185,7 @@ plt.ylabel('Total Payments', fontsize=13)
 plt.show()
 ```
 
-[image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\total-payments-by-cohort.png)
+[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/total-payments-by-cohort.png)
 
 It's clear that there has been growth with a peak in a cohort of November 2017, however it's worth a remark that data are missing for the following months 2016-9, 2016-12, and 2018-9.
 
@@ -195,7 +198,7 @@ selected_cohorts = df.loc[['2018-3', '2018-4']]
 selected_cohorts
 ```
 
-[image](..static\images\post\202103-cohort-analysis-brazilian-ecommerce\selected_cohorts.png)
+[image](..static/images/post/202103-cohort-analysis-brazilian-ecommerce/selected_cohorts.png)
 
 ```
 selected_cohorts.iloc[1] - selected_cohorts.iloc[0]
