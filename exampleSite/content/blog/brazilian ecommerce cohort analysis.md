@@ -27,7 +27,7 @@ tags:
 type: "featured"
 ---
 #### How It Started
-I was only acquainted with cohort analysis but thanks to Renat Alimbekov, I got introduced to the topic with practice. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [blog]('https://alimbekov.com'), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started with this project. His solution can be found [here](https://alimbekov.com/cohort-analysis-python/).
+I was only acquainted with cohort analysis but thanks to Renat Alimbekov, I got introduced to the topic with practice. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [blog](https://alimbekov.com), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started with this project. His solution can be found [here](https://alimbekov.com/cohort-analysis-python/).
 
 #### Introduction
 In the task we're given a dataset of [Brazilian Ecommerce by Olist](https://www.kaggle.com/olistbr/brazilian-ecommerce), the two tables to merge (olist_orders_dataset.csv and olist_order_payments_dataset.csv), and two questions:
@@ -199,7 +199,7 @@ plt.show()
 
 ![Total Payments by Cohort](../../images/post/202103-cohort-analysis-brazilian-ecommerce/total-payments-by-cohort.png#center)
 
-It's clear that there has been a growth with a peak in a cohort of November 2017, however it's worth a remark that data are missing for the following months 2016-9, 2016-12, and 2018-9.
+Clearly, there has been a growth with a peak in a cohort of November 2017, however it's worth a remark that data are missing for the following months 2016-9, 2016-12, and 2018-9.
 
 ```
 plt.figure(figsize=(12,7))
@@ -213,11 +213,9 @@ plt.show()
 
 ![Mean Order Count Per Customer by Cohort](../../images/post/202103-cohort-analysis-brazilian-ecommerce/mean-order-per-customer-by-cohort.png#center)
 
-One can see a decrease in an average number of orders per customer after July 2017. It didn't increase afterwards. That's interesting, it feels like ecommerce shops chose a different growth strategy to concentrate on attracting new customers, though we don't know the real reason.
+The chart shows a decrease in an average number of orders per customer after July 2017. It didn't increase afterwards. That's interesting, it feels like ecommerce shops chose a different growth strategy to concentrate on attracting new customers, though we don't know the real reason.
 
 - Compare any of the two cohorts by revenue and a number of orders
-
-It's clear that there has been growth with a peak in a cohort of November 2017, however it's worth noticing that the data is missing in 2016-9, 2016-12, and 2018-9
 
 ```
 selected_cohorts = df.loc[['2018-3', '2018-4']]
@@ -243,4 +241,7 @@ dtype: float64
 The two cohorts are of interest to me because of comparable payment values while the mean order per customer is smaller by 0.003 in the second (2018-4), on average these customers paid more by around 6.5 currency units. Perhaps it's worth studying the profile of those particular well paying customers in detail for advertisement. :)
 
 #### Conclusion
+
+![df e-commerce](../../images/post/202103-cohort-analysis-brazilian-ecommerce/df-ecommerce.png#center)
+
 One can clearly see a positive correlation between customer base growth and payment values. Mean payment per order didn't go below 150 during the period from March 2018 to August 2018. However, it would be interesting to see if it started decreasing which is impossible due to a lack of data. Though maybe it would be great to come back to doing the same thing as in that 6 month period.
