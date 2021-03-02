@@ -27,7 +27,7 @@ tags:
 type: "featured"
 ---
 #### How It Started
-I was only acquainted with cohort analysis but thanks to Renat Alimbekov, I got introduced to the topic with practice. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [blog]('https://alimbekov.com'), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started with this project. You can find his solution [here](https://alimbekov.com/cohort-analysis-python/) by the way.
+I was only acquainted with cohort analysis but thanks to Renat Alimbekov, I got introduced to the topic with practice. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [blog]('https://alimbekov.com'), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started with this project. His solution can be found [here](https://alimbekov.com/cohort-analysis-python/).
 
 #### Introduction
 We're given a dataset of Brazilian Ecommerce, the two tables to merge (olist_orders_dataset.csv and olist_order_payments_dataset.csv), and two questions:
@@ -114,7 +114,7 @@ orders['order_year'] = orders['order_date'].dt.year
 orders['order_month'] = orders['order_date'].dt.month
 ```
 
-Orders should have different statuses.
+Orders have different statuses.
 
 ```
 orders['order_status'].unique().tolist()
