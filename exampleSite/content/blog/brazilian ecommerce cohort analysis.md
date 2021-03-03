@@ -30,12 +30,14 @@ type: "featured"
 I was only acquainted with cohort analysis but thanks to Renat Alimbekov, I got introduced to the topic with practice. Renat is a Deep Learning Scientist with a [telegram channel](https://t.me/renat_alimbekov) and a [blog](https://alimbekov.com), as well as a mentor at Yandex.Praktikum. I had a different mentor during my studies but I've been following Renat's telegram channel and noticed that he started giving typical data science assignments. So I accepted this challenge and started with this project. His solution can be found [here](https://alimbekov.com/cohort-analysis-python/).
 
 #### Introduction
-In the task we're given a dataset of [Brazilian Ecommerce by Olist](https://www.kaggle.com/olistbr/brazilian-ecommerce), the two tables to merge (olist_orders_dataset.csv and olist_order_payments_dataset.csv), and two questions:
+In the task we're given a dataset of [Brazilian Ecommerce by Olist](https://www.kaggle.com/olistbr/brazilian-ecommerce)<sup>1</sup>, the two tables to merge (olist_orders_dataset.csv and olist_order_payments_dataset.csv), and two questions:
 
 1. How many orders on average, and how much do all cohorts make in the first year?
 2. Compare any of the two cohorts by revenue and number of orders
 
-It was a late night last Thursday, I gave it a try before going to sleep. When I was solving it, the words "in the first year" made me jump over to the next question cause it was time to sleep. I decided to see what I would get in the second question, solved it in a different way (from what one will see below, also I first used a different cohort column) and tagged Renat in a tweet. He gave me some feedback so I felt encouraged to get back to the task. In one of the following nights I wrote a few ideas of how to approach the first question just before falling asleep (see the time in the screenshot).
+It was a late night last Thursday, I gave it a try before going to sleep. When I was solving it, the words "in the first year" made me jump over to the next question cause it was time to sleep. I decided to see what I would get in the second question, solved it in a different way (from what one will see below, also I first used a different cohort column) and tagged Renat in a [tweet](https://twitter.com/YerzhanKaratay/status/1365024046291832839). He gave me some feedback so I felt encouraged to get back to the task. In one of the following nights I wrote a few ideas of how to approach the first question just before falling asleep (see the time in the screenshot).
+
+<sup>1</sup> Olist operates an online e-commerce site for sellers, that connects merchants and their products to main marketplaces.
 
 ![night ideas](../../images/post/202103-cohort-analysis-brazilian-ecommerce/night-ideas.jpg#center)
 
@@ -153,7 +155,7 @@ paid_orders_percent = paid_orders / all_orders
 0.9875905068382944
 ```
 
-There are 98206 paid orders where the payment hasn't been refunded (either due to being unavailable or canceled) at the moment of data extraction from the database. One can also see that only ~1.24% (1 - paid_orders_percent) of orders turned to be somewhat problematic.
+There are 98206 paid orders where some of the payments might be refunded (either due to being unavailable or canceled) but weren't at the moment of data extraction from the database. One can also see that only ~1.24% (1 - paid_orders_percent) of orders turned to be somewhat problematic so far.
 Within each cohort I'll calculate the number of customers, total orders and payments by making a pivot table.
 
 ```
